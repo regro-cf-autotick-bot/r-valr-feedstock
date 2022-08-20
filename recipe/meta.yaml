@@ -39,6 +39,7 @@ requirements:
     - r-ggplot2
     - r-readr
     - r-rlang
+    - r-rtracklayer
     - r-stringr
     - r-tibble >=1.4.2
   run:
@@ -50,6 +51,7 @@ requirements:
     - r-ggplot2
     - r-readr
     - r-rlang
+    - r-rtracklayer
     - r-stringr
     - r-tibble >=1.4.2
 
