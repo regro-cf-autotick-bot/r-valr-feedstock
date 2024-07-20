@@ -1,4 +1,4 @@
-{% set version = '0.6.3' %}
+{% set version = "0.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/valr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/valr/valr_{{ version }}.tar.gz
-  sha256: 2379e896c1d052fc5e62dae1def9eddffcd0338ac4f12f7df5d9005e01a7edd3
+  sha256: 5a8d99afbbedd96f57b1431efea9f672c82951cfaa842b188ade08489fb2e8de
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -60,9 +60,7 @@ test:
 about:
   home: https://github.com/rnabioco/valr/, https://rnabioco.github.io/valr/
   license: MIT
-  summary: Read and manipulate genome intervals and signals. Provides functionality similar to
-    command-line tool suites within R, enabling interactive analysis and visualization
-    of genome-scale data. Riemondy et al. (2017) <doi:10.12688/f1000research.11997.1>.
+  summary: Read and manipulate genome intervals and signals. Provides functionality similar to command-line tool suites within R, enabling interactive analysis and visualization of genome-scale data. Riemondy et al. (2017) <doi:10.12688/f1000research.11997.1>.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
